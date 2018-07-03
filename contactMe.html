@@ -45,13 +45,13 @@
         <aside id="contactMe">
             <h3>I would love to hear from you!</h3>
 
-	    <form id="contactForm" action="http://formspree.io/nshaunak96@gmail.com">
-	      <input type="email" name="_replyto" class="form-control" placeholder="Your Name!" required><br>
-	      <textarea name="body" class="form-control" placeholder="Pen down your thoughts"></textarea><br>
-	      <input type="submit" class="submit" value="Send">
- 	    </form>
-
-            
+	   <form action="https://formspree.io/nshaunak96@gmail.com" method="POST">
+    		<input type="text" name="name" placeholder="Your name">
+    		<input type="email" name="_replyto" placeholder="Your email">
+		<input type="text" name="_subject" placeholder="subject">
+ 		<textarea name="body" placeholder="message"></textarea>
+    		<input type="submit" value="Send">
+	    </form>
 
         </aside>
       </div>
