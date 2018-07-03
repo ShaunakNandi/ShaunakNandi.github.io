@@ -1,0 +1,158 @@
+<!--
+copy paste index.html.. home
+make Projects tab change color.. shift the highlight class location
+remove showcase1 since that shows only on home page
+contactMe can stay
+ -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">   <!--responsive website -->
+    <meta name="description" content="My Personal Website">
+    <meta name="keywords" content="enthusiast, profile, electronics, projects">
+    <meta name="author" content="Shaunak Nandi">
+    <title>Shaunak Nandi | Personal Website</title>
+    <link rel="icon" type="image/png" href="file:///E:/shaun/thinkTwice_temp/images/favicon.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!--font family -->
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">  <!--header and body-->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">  <!--paraScroll -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a href="index.html"><h1>Shaunak <class="highlight">Nandi</h1></a>
+        </div>
+        <div class="nav">
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+          <div class="menu">
+            <a href="contactMe.html">Contact Me!</a>
+            <a href="photography.html">Photography</a>
+            <a href="roles.html">Roles</a>
+            <a class="highlight" href="code.html">Code It!</a>
+            <a href="projects.html">Projects</a>
+            <a href="index.html" class="active">Home</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!--removed showcase1 -->
+
+    <section id="projects_main">
+      <div class="container">
+        <article id="projects_art1">
+          <h1>C O D E &nbsp A L O N G</h1>
+          <p text-align="adjusted">For me, the most relatable part of coding is that it is very mathematical.
+              It is logical. Also, there are so many ways to code and yet arrive at the particular solution.
+              We only need to spend time refining the code and filter out bugs, redundancies and improve overall
+              run-time efficiency as well as user experience.</p>
+        </article>
+
+        <aside id="sidebar_projects">
+          <div class="asideDarker">
+            <h3>Competent</h3>
+            <p> C/C++ | Python-openCV | MATLAB | Java</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+      <div class="parallaxCode"></div>
+
+    <div class="container">
+      <ul class="project_lists">
+        <li>
+          <div class="container">
+            <aside class="project_lists_img">
+              <h3>Personal Website</h3>
+              <img src="images/codeIt/website.png">
+            </aside>
+            <aside class="project_lists_txt">
+              <p><i><b>Code base: HTML5, CSS3, JS (June 2018 - Present)</b></i><br>
+                A completely new journey, this project started off by watching a youtube video which sparked my
+              interest. I aim to provide a brief insight and also connect with like minded individuals.
+              <a href="https://github.com/ShaunakNandi/personal-website">Learn More</a></p>
+            </aside>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+            <aside class="project_lists_img">
+              <h3>Battleship</h3>
+              <img src="images/codeIt/battleship.png">
+            </aside>
+            <aside class="project_lists_txt">
+              <p><i><b>Code base: Python (April - June 2017)</b></i><br>
+                A basic command line interface game I built during a Codecademy course. The user repeatedly enters
+              (<"row">, <"column">) coordinates until s/he successfully guesses the Battleship coordinates (which is
+              generated randomly). <a href="https://github.com/ShaunakNandi/battleship">Learn More</a></p>
+            </aside>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+            <aside class="project_lists_img">
+              <h3>Windows Game XnO</h3>
+              <img src="images/codeIt/XnO.png">
+            </aside>
+            <aside class="project_lists_txt">
+              <p><i><b>Code base: Visual C++ (May 2017)</b></i><br>
+                A GUI windows game I built while completing the course on Udemy. It provided insights into efficient
+                coding methods and off course.. building a GUI.
+                <a href="https://github.com/ShaunakNandi/Windows-game-XnO-">Learn More</a></p>
+            </aside>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+            <aside class="project_lists_img">
+              <h3>Sudoku </h3>
+              <img src="images/codeIt/sudoku.png">
+            </aside>
+            <aside class="project_lists_txt">
+              <p><i><b>Code base: C++ (eclipse IDE) (July 2017)</b></i><br>
+                A previous internship guide had built one to sharpen his coding skills. So I asked my self, "Why not?"
+                Although I have tried my utmost, I know there is much debugging and perfections yet to be tapped.
+                This code itself auto-generates upto 5 randInt() beyond which the code becomes unstable :/
+                <a href="https://github.com/ShaunakNandi/Sudoku">Learn More</a>
+              </p>
+            </aside>
+          </div>
+        </li>
+    </ul>
+  </section>
+
+    <!--removed contact me -->
+
+    <footer>
+      <section class="boxes">
+          <div class="box">
+            <a href="https://www.linkedin.com/in/shaunak-nandi/"> <i class="fa fa-2x fa-linkedin-square"></i></a>
+          </div>
+          <div class="box">
+            <a href="https://github.com/ShaunakNandi"><i class="fa fa-2x fa-github-square"></i></a>
+          </div>
+          <div class="box">
+            <a href="https://www.facebook.com/shaunak1711"><i class="fa fa-2x fa-facebook-square"></i></a>
+          </div>
+          <div class="box">
+            <a href="https://www.youtube.com/channel/UCq-KXhxhRtMYHp9iEEKGWvg?view_as=subscriber"><i class="fa fa-2x fa-youtube"></i></a>
+          </div>
+          <div class="box">
+            <a href="https://www.behance.net/shaunak_Nandi"><i class="fa fa-2x fa-behance"></i></a>
+          </div>
+      </section>
+    </footer>
+  </body>
+</html>

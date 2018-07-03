@@ -1,0 +1,8 @@
+parallel scrolling
+	add another secion which shall hold page title (in addition to the one in top nav bar)
+	the section should span entire width of the page
+	height should be considerable to ensure long scroll. only then effect is visible
+
+MUST READ:
+1. setting up personalised email and linking with gmail 
+https://problogger.com/how-to-set-up-an-email-account-that-uses-your-domain-name/

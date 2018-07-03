@@ -1,0 +1,168 @@
+<!--
+copy paste index.html.. home
+make Projects tab change color.. shift the highlight class location
+remove showcase1 since that shows only on home page
+contactMe can stay
+ -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">   <!--responsive website -->
+    <meta name="description" content="My Personal Website">
+    <meta name="keywords" content="enthusiast, profile, electronics, projects">
+    <meta name="author" content="Shaunak Nandi">
+    <title>Shaunak Nandi | Personal Website</title>
+    <link rel="icon" type="image/png" href="file:///E:/shaun/thinkTwice_temp/images/favicon.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!--font family -->
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">  <!--header and body-->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">  <!--paraScroll -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a href="index.html"><h1>Shaunak <class="highlight">Nandi</h1></a>
+        </div>
+        <div class="nav">
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+          <div class="menu">
+            <a href="contactMe.html">Contact Me!</a>
+            <a href="photography.html">Photography</a>
+            <a href="roles.html">Roles</a>
+            <a href="code.html">Code It!</a>
+            <a class="highlight" href="projects.html">Projects</a>
+            <a href="index.html" class="active">Home</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!--removed showcase1 -->
+
+    <section id="projects_main">
+      <div class="container">
+        <article id="projects_art1">
+          <h1>P R O J E C T S  &nbsp&nbsp&nbsp T H U S &nbsp &nbsp&nbsp&nbsp F A R</h1>
+          <p text-align="adjusted">This page provides an insight into my experiments with electronics
+          projects which I may have pursued due to self motivation or due to
+          involvement with a couple of really memorable internships.</p>
+          <p>Do let me know if you have any ideas which you would like to
+          collaborate with. At the moment my interests lie in Computer vision
+          (python-OpenCV) in embedded visions domain.
+          Programming wise, I am exploring Machine Learning through Coursera. I
+          am also interested to explore CNN to furthur enhance my embedded vision
+          projects in the long run.</p>
+        </article>
+
+        <aside id="sidebar_projects">
+          <div class="asideDarker">
+            <h3>My Keen Interests</h3>
+            <p>Embedded Vision | Exploring projects using the Pi | Home IoT</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+      <div class="parallaxProj"></div>
+
+    <div class="container">
+      <ul class="project_lists">
+        <li>
+          <div class="container">
+            <aside class="project_lists_img">
+              <h3>Home IoT using the NodeMCU (ESP8266) - (Feb - March 2018)</h3>
+              <img src="images/IoT.png">
+            </aside>
+            <aside class="project_lists_txt">
+              <p><i><b>Industry: Qantom Software Pvt. Ltd.</b></i><br>
+                1. Connect to a registered and existing Access Point (AP). <br>
+               2. On successful connection, webserver tasks would listen on port 80 and accordingly, the GPIO
+               pins would be controlled (setting the NodeMCU itself as an access point). <br>
+               3. This can be extended to smart home applications and in hospitals, making it easier for patients
+               with (limited) motor control to command their immediate surrounding via smart devices.
+             <a href="https://github.com/ShaunakNandi/homeIoT">Learn More</a></p>
+            </aside>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+            <aside class="project_lists_img">
+              <h3>Automated Smart Switch using relays and Arduino Uno - (Sept - Dec 2017)</h3>
+              <img src="images/smartSwitch.png">
+            </aside>
+            <aside class="project_lists_txt">
+              <p><i><b>Industry: Voltronex Technology Pvt. Ltd.</b></i><br>
+                1. Successful Design and materialisation of a compact device for switching between manual control
+                (from the switch-board) or the sensor control (by the micro-controller) for home appliances. <br>
+                2. The user is thus given the real-time option to allow sensors to control the home appliances or else manually
+                override the micro-controller and switch the appliances from the conventional switch-board. <br>
+                3. Can be implemented in hospitals (given the wireless communication) or smart homes.
+              <a href="https://photos.app.goo.gl/7B53qLBcvSX8xN2C2">Learn More</a></p>
+            </aside>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+            <aside class="project_lists_img">
+              <h3>Temperature or Light Controlled Switch using the LM35 and LDR</h3>
+              <img src="images/temp-ctrl-switch.png">
+            </aside>
+            <aside class="project_lists_txt">
+              <p>Designed and implemented an analog integrated circuit to automate switching of an LED based on LDR
+              and also 12V fan based on the temperature sensor. When the ambient light intensity is negligible, then
+              the LDR triggers the LED to switch ON. Likewise, the temp. sensor (LM35) triggers the fan when the
+              temperature rises above a preset threshold as set by the potentiometer.
+              <a href="https://www.youtube.com/watch?v=Gucenl0IbbM&list=PLVKZwyzQCkgZlh9cOf6FUk0mPaOlmESJE">Learn More</a></p>
+          </aside>
+          </div>
+        </li>
+
+        <li>
+          <div class="container">
+            <aside class="project_lists_img">
+              <h3>Water Level Controller using the Arduino Uno (atmega328P) and UltraSound Sensor (40MHz)</h3>
+              <img src="images/temp-ctrl-switch.png">
+            </aside>
+            <aside class="project_lists_txt">
+              <p>To address overflow of water from household overhead tanks, a prototype to automatically switch the
+              motor pump ON/ OFF was built. The Arduino (Atmega 328P, &nbsp 8 bit) and an Ultrasonic sensor (40 MHz)
+              were used to monitor the water level of the overhead tank.
+              <a href="https://github.com/ShaunakNandi/automated_motor">Learn More</a></p>
+            </aside>
+          </div>
+        </li>
+    </ul>
+  </section>
+
+    <!--removed contact me -->
+
+    <footer>
+      <section class="boxes">
+          <div class="box">
+            <a href="https://www.linkedin.com/in/shaunak-nandi/"> <i class="fa fa-2x fa-linkedin-square"></i></a>
+          </div>
+          <div class="box">
+            <a href="https://github.com/ShaunakNandi"><i class="fa fa-2x fa-github-square"></i></a>
+          </div>
+          <div class="box">
+            <a href="https://www.facebook.com/shaunak1711"><i class="fa fa-2x fa-facebook-square"></i></a>
+          </div>
+          <div class="box">
+            <a href="https://www.youtube.com/channel/UCq-KXhxhRtMYHp9iEEKGWvg?view_as=subscriber"><i class="fa fa-2x fa-youtube"></i></a>
+          </div>
+          <div class="box">
+            <a href="https://www.behance.net/shaunak_Nandi"><i class="fa fa-2x fa-behance"></i></a>
+          </div>
+      </section>
+    </footer>
+  </body>
+</html>

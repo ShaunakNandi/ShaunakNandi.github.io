@@ -1,0 +1,404 @@
+body{
+  font-family: 'Gentium Basic', serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/*==================global variables==========================================*/
+/* . for class and # for id */
+.container{
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+.asideDarker{
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.fa {       /*clickable images for linking to other accounts*/
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.9;
+}
+/*============================================================================*/
+
+header{
+  width: 100%;
+  background: #1e90ff;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 50px;
+  border-bottom: #0D01D5/*d6204e*/ 3px solid; /* border at bottom*/
+
+  position: sticky;
+  top: 0;
+  opacity: 0.9;
+}
+header a{            /*links in menu*/
+  color: #ffffff;
+  text-decoration: none;      /*remove underlines in links*/
+  font-size: 14px;
+}
+
+header #branding{
+  font-size: 16px;
+  float: left;
+  margin-right: 30px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+}
+header #branding h1{
+  margin: 8px 0 0 0;
+  font-size: 20px;
+}
+header .highlight, header .current a{
+  color: #dd1717;
+}
+header a:hover{
+  color: #dd1717;
+  font-weight: bolder;
+}
+/*=========================nav bar============================================*/
+.nav{
+  margin: 0 10px 0 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+label{
+  margin: 14px 20px 0 20px;
+  display: none;
+  float: right;
+}
+#toggle{
+  display: none;
+}
+.menu a{
+  float: right;
+  font-size: 18px;
+  margin: 10px 0 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+}
+/*============================================================================*/
+
+/*====================boxes===================================================*/
+/*
+#boxes{
+  text-decoration: none;
+  margin-top: 10px 0 0 10px;
+  border-top: #000 1px solid;
+  width: 100%;
+  text-align: center;
+  background-color: #0ff;
+}*/
+.boxes{
+  width: 100%;
+  text-align: center;
+}
+.boxes .box{
+  float: left;
+  background-color: #f4f4f4;
+  width: 11%;
+  padding: 10px;
+  margin: 3%;
+}
+.boxes i{
+  padding: 10px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+  color: #000;
+}
+/*============================================================================*/
+
+/*========================home page===========================================*/
+.parallaxTxt{
+  font-family: "Pacifico";
+  color: #0D01D5;  opacity: 0.2;
+  font-size: 25px;
+  text-align: center;
+}
+
+/*showcase1 (which is an id)*/
+#showcase1 h1{
+  margin-top: 100px;
+  font-size: 40px;
+  color: #000000;                                   /*remove after img inst*/
+  margin-bottom: 10px;
+}
+#showcase1 p{
+  font-size: 20px;                                  /*remove after img inst*/
+  color: #000000;
+  text-align: justify;
+}
+aside#aboutMeImg{
+  float: left;
+  margin-left: 10px;
+}
+#aboutMeImg img{
+  border-radius: 50%;
+  margin-top: 30px;
+}
+aside#aboutMeText{      /*doesn't work with a space in between*/
+  float: right;         /*aside elements DON'T float to either end implicitly*/
+  width: 50%;
+  margin-top: 10px;
+  font: bolder;
+}
+
+/*section containing experiences so far*/
+#experience {
+  width: 100%;
+  background-color: #35424a;
+  opacity: 0.9;
+  display: flex;
+  float: left;
+  text-align: center;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+}
+#experience .XPbox{
+  width: 30%;
+  font-size: 10px;
+  float: left;
+  color: #fff;
+}
+.XPbox h1{
+  padding: 8px;
+}
+.XPbox h1, h2{
+  padding-left: 25%;
+}
+.XPbox h2{
+  font-size: 24px;
+}
+/*============================================================================*/
+
+/*========================projects page=======================================*/
+aside#sidebar_projects{ /*doesn't work with a space in between*/
+  float: right;         /*aside elements DON'T float to either end implicitly*/
+  width: 30%;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+article#projects_art1{
+  float: left;
+  width: 65%;
+  font-size: 18px;
+  text-align: justify;
+}
+.project_lists li{
+  font-size: 18px;
+  list-style: none;
+  margin: 30px 0 30px 0;
+  padding-left: -5px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+@keyframes up-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 1.5em; }
+  100% { padding-top: 2em; }
+}
+.project_lists li .container:hover{
+  animation: up-bump 0.4s ease;
+}
+.project_lists h3{
+  text-decoration: none;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+}
+.project_lists h3, p{
+  text-decoration: none;
+  margin-left: 5px;
+}
+.project_lists_img img{
+  width: 95%;
+  margin: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.project_lists_img{
+  float: left;
+}
+.project_lists_txt{
+  margin-top: -10px;
+  float: right;
+}
+/*============================================================================*/
+
+/*===================photography page=========================================*/
+aside#sidebar_photography{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+article#photography_art1{
+  float: left;
+  width: 65%;
+  font-size: 18px;
+}
+/*============================================================================*/
+
+/*===================Roles page===============================================*/
+.mySlides{
+  width: auto;
+  height: 250px;
+}
+#slideshowTxt .rolesTxt{
+  font-size: 15px;
+}
+#slideshowSlides{
+  width: 50%;
+  float: left;
+}
+#slideshowTxt{
+  margin: 3px;
+  text-align: justify;
+  width: 65%;
+  float: right;
+}
+/*============================================================================*/
+
+/*===================contact me page==========================================*/
+#contactMe{
+  width: 50%;
+  float: right;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+#contactMe h3{
+  text-align: center;
+}
+.form-control{
+  margin: 10px;
+  padding: 0 0 10px 0;
+  text-align: left;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+form .submit{
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #00f;
+  color: #fff;
+  border-bottom: none;
+  width: inherit;
+  border-radius: 10px;
+}
+#contactForm .submit: hover{
+  background-color: #35424a;
+  cursor: pointer;
+}
+/*============================================================================*/
+/*parallax effect only on bigger screens*/
+@media (min-width: 768px) {
+  .parallax{
+      margin-top: 20px;
+      background: url(../images/kyleCottrell652312_s3.jpg) no-repeat;
+      border: 1px solid #000;
+      min-height: 30em;
+      background-attachment: fixed;
+    }
+  .parallaxProj{
+    background: url(../images/jellekeVanooteghem554406_s5.jpg) no-repeat;
+    background: cover;
+    border: 1px solid #000;
+    resize: inherit;
+    min-height: 20em;
+    background-attachment: fixed;
+  }
+  .parallaxPhoto{
+    background: url(../images/voyager1.jpg) no-repeat;
+    background: cover;
+    min-height: 58em;
+    border: 1px solid #000;
+    background-attachment: fixed;
+  }
+  .parallaxRoles{
+    background: url(../images/justin-main-189744-unsplash2.jpg) no-repeat;
+    image-orientation: auto;
+    border: 1px solid #000;
+    min-height: 28em;
+    background-attachment: fixed;
+  }
+  .parallaxCode{
+    background: url(../images/nesa-by-makers-664834-unsplash1.jpg) no-repeat;
+    image-orientation: auto;
+    border: 1px solid #000;
+    min-height: 28em;
+    background-attachment: fixed;
+  }
+}
+
+@media(max-width: 768px) {
+/*  nav,
+  label,*/
+  aside#aboutMeText,
+  #experience,
+  .XPbox,
+  #contactMe, /*h1,
+  #contactMe form,*/
+  article#projects_art1,
+  article#photography_art1,
+  aside#sidebar_projects,
+  #slideshowSlides, #slideshowTxt,
+  aside#sidebar_photography{
+    float: none;
+    text-align: justify;
+    width: 100%;
+  }
+  .boxes .box{
+    margin: 0;
+  }
+  #contactMe{
+    width: auto;
+    text-align: center;
+  }
+  #contactMe button{
+    margin-left: auto;
+  }
+  aside#aboutMeImg{
+    text-align: center;
+  }
+  label{
+    display: block;
+    cursor: pointer;
+    font-size: bold;
+  }
+  .menu{
+    text-align: right;
+    width: 85%;
+    display: none;
+  }
+  .menu a{
+    width: 85%;
+    display: block;
+    border-bottom: 1px solid #000;
+  }
+  #toggle:checked +.menu{
+    display: block;
+  }
+  img{
+    width: 50%;
+    height: auto;
+  }
+}
