@@ -44,13 +44,15 @@
         </aside>
         <aside id="contactMe">
             <h3>I would love to hear from you!</h3>
-            <form id="contactForm" method="post" action="contactForm.php">
-              <input name="name" type="text" class="form-control" placeholder="Your Name!" required><br>
-              <input name="email" type="email" class="form-control" placeholder="Your Email!" required><br>
-              <input name="subject" type="subject" class="form-control" placeholder="Subject" required><br>
-              <textarea name="message" class="form-control" placeholder="Pen down your thoughts" ></textarea><br>
-              <button type="submit" class="submit" name="submit">Begin Conversation!</button>
-            </form>
+
+	    <form id="contactForm" action="http://formspree.io/you@email.com">
+	      <input type="email" name="_replyto" class="form-control" placeholder="Your Name!" required><br>
+	      <textarea name="body" class="form-control" placeholder="Pen down your thoughts"></textarea><br>
+	      <input type="submit" value="Send">
+ 	    </form>
+
+            
+
         </aside>
       </div>
     </section>
