@@ -203,13 +203,13 @@ article#projects_art1{
   border-radius: 10px;
   background-color: #f4f4f4;
 }
-@keyframes up-bump {
-  0% { padding-top: 2em; }
-  50% { padding-top: 1.5em; }
-  100% { padding-top: 2em; }
+@keyframes left-bump {
+  0% { padding-left: 2em; }
+  50% { padding-left: 1.5em; }
+  100% { padding-left: 2em; }
 }
 .project_lists li .container:hover{
-  animation: up-bump 0.4s ease;
+  animation: left-bump 0.4s ease;
 }
 .project_lists h3{
   text-decoration: none;
@@ -245,6 +245,30 @@ article#photography_art1{
   float: left;
   width: 65%;
   font-size: 18px;
+}
+/*============================================================================*/
+
+/*===================MOOC page=========================================*/
+.cert_img{
+    width: 25%;
+    height: 25%;
+    border: 1px solid #000;
+    background-color: aqua;
+}
+.cert_img img{
+    width: 25%;
+    height: 25%;
+  border: 1px solid #000;
+  border-radius: 5px;
+    
+}
+aside#cert_txt{
+    float: right;
+    width: 60%;
+    background-color: red;
+}
+aside#cert_txt p{
+    font-size: 18px;
 }
 /*============================================================================*/
 
