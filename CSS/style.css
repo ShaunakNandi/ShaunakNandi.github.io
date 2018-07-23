@@ -252,6 +252,7 @@ article#projects_art1{
     color: #000;
     background: url('../images/poem/janfillem-648678-unsplash1.jpg') no-repeat;
     border: 1px solid #000;
+    border-radius: 5px;
 }
 #poem2 p{
     font-family: 'Satisfy', cursive;
@@ -264,6 +265,7 @@ article#projects_art1{
     color: #000;
     background: url('../images/poem/matt-power-474202-unsplash.jpg') no-repeat;
     border: 1px solid #000;
+    border-radius: 5px;
 }
 /*============================================================================*/
 
