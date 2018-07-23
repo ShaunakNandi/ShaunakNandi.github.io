@@ -234,17 +234,35 @@ article#projects_art1{
 }
 /*============================================================================*/
 
-/*===================photography page=========================================*/
-aside#sidebar_photography{
-  float: right;
-  width: 30%;
-  margin-top: 10px;
-  margin-right: 10px;
+/*===================poetry page=========================================*/
+#poem{
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+    background-color: yellow;
 }
-article#photography_art1{
-  float: left;
-  width: 65%;
-  font-size: 18px;
+#poem1 p{
+    font-family: 'Satisfy', cursive;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: bold;
+    color: #000;
+    background: url('../images/poem/janfillem-648678-unsplash1.jpg') no-repeat;
+    border: 1px solid #000;
+}
+#poem2 p{
+    font-family: 'Satisfy', cursive;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: bold;
+    color: #000;
+    background: url('../images/poem/matt-power-474202-unsplash.jpg') no-repeat;
+    border: 1px solid #000;
 }
 /*============================================================================*/
 
@@ -382,7 +400,6 @@ form .submit{
   #contactMe, /*h1,
   #contactMe form,*/
   article#projects_art1,
-  article#photography_art1,
   aside#sidebar_projects,
   #slideshowSlides, #slideshowTxt,
   aside#sidebar_photography{
