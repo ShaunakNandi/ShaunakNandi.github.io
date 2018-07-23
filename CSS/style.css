@@ -444,4 +444,10 @@ form .submit{
     width: 50%;
     height: auto;
   }
+    #poem1 p, #poem2 p{
+        margin-right: 5px;
+    }
+    .project_lists li{
+        margin-right: 5px;
+    }
 }
